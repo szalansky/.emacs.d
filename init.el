@@ -1,3 +1,6 @@
+;;; Emacs settings
+(setq-default show-trailing-whitespace t)
+
 ;;;;
 ;; Packages
 ;;;;
@@ -36,7 +39,7 @@
 (defvar my-packages
   '(better-defaults
     material-theme
-    
+
     ;; makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
     paredit
@@ -92,6 +95,10 @@
     ;; code snippets
     yasnippet-bundle
     ;;yasnippet-snippets
+    groovy-mode
+
+    go-mode
+    rust-mode
 ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -160,4 +167,3 @@
 
 (load-theme 'material t)
 (global-linum-mode t)
-
